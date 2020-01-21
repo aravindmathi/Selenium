@@ -48,7 +48,7 @@ try:
 except Exception as exc:
     with open(os.path.join(os.getcwd(),'error.txt'),'a') as w:
         w.write('\n['+str(datetime.now())+']:'+str(strerror(exc.errno)))
-        print("Check error.txt")
+        print("Check error.txt. Make sure \'contacts\' text file exists in current working directory")
 
     
 
